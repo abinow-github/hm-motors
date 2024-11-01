@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <title>ASP</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -32,11 +32,14 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+    <!-- <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
             <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
@@ -65,16 +68,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+    <div class="container-fluid nav-bar sdkjb p-0">
+        <div class="position-relative" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">Royal Cars</h1>
+                    <img src="img/logo/asp-logo.png" alt="" class="logo">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -82,24 +85,11 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="car.html" class="dropdown-item">Car Listing</a>
-                                <a href="detail.html" class="dropdown-item">Car Detail</a>
-                                <a href="booking.html" class="dropdown-item">Car Booking</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="team.html" class="dropdown-item">The Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="" class="nav-item nav-link">Who We are</a>
+                        <a href="" class="nav-item nav-link">What We do</a>
+                        <a href="" class="nav-item nav-link">Our Portfolio</a>
+                        <a href="" class="nav-item nav-link">Latest from ASP</a>
+                        <a href="" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -108,51 +98,7 @@
     <!-- Navbar End -->
 
 
-    <!-- Search Start -->
-    <div class="container-fluid bg-white pt-3 px-lg-5">
-        <div class="row mx-n2">
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Pickup Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Drop Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="date mb-3" id="date" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
-                        data-target="#date" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="time mb-3" id="time" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
-                        data-target="#time" data-toggle="datetimepicker" />
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Select A Car</option>
-                    <option value="1">Car 1</option>
-                    <option value="2">Car 1</option>
-                    <option value="3">Car 1</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
-            </div>
-        </div>
-    </div>
-    <!-- Search End -->
+
 
 
     <!-- Carousel Start -->
@@ -160,22 +106,25 @@
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="img/banner-img1.gif" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                            <!-- <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4> -->
+                            <h4 class="display-1 text-white mb-md-4">Introducing Best
+                                Event Partners In Dubai</h4>
+                                <p>Best Events & Exhibition Planners In Dubai</p>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Call Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="img/banner-img1.gif" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                            <h4 class="display-1 text-white mb-md-4">Introducing Best
+                                Event Partners In Dubai</h4>
+                                <p>Best Events & Exhibition Planners In Dubai</p>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Call Now</a>
                         </div>
                     </div>
                 </div>
@@ -198,37 +147,63 @@
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">01</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span></h1>
+            <!-- <h1 class="display-1 text-primary text-center">01</h1> -->
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about.png" alt="">
-                    <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
+                    <!-- <img class="w-75 mb-4" src="img/about.png" alt=""> -->
+                    <p>
+                        Established in 2008 in the United Arab Emirates, ASP has swiftly risen to become a beacon of innovation and professionalism in the Events and Exhibitions industry. From our inception, we have cultivated a reputation as a forward-thinking, dynamic company, offering excellent services across events, exhibitions, and custom interior solutions throughout the Middle East. Renowned for our excellence in Design, Manufacturing, Production, Installation and Technical execution. ASP stands out for its commitment to delivering unparalleled quality and professionalism.
+                    </p>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3" style="justify-content: center;">
                 <div class="col-lg-4 mb-2">
                     <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                            <i class="fa fa-2x fa-solid fa-calendar-check text-secondary"></i>
                         </div>
-                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                        <h4 class="text-uppercase m-0">500 + <br> Exhibitions</h4>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-2">
+                <!-- <div class="col-lg-4 mb-2">
                     <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-car text-secondary"></i>
+                            <i class="fa fa-2x fa-solid fa-calendar text-secondary"></i>
                         </div>
-                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                        <h4 class="text-light text-uppercase m-0">1000 + <br>Events</h4>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-calendar text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">1000 + <br> Events</h4>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                     <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                            <i class="fa fa-2x fa-solid fa-users text-secondary"></i>
                         </div>
-                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                        <h4 class="text-uppercase m-0">750 + <br> Conferences</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-warehouse text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">900 + <br> Warehouses</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-solid fa-store text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">1200 + <br> Exhibitors</h4>
                     </div>
                 </div>
             </div>
@@ -240,46 +215,48 @@
     <!-- Services Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">02</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+            <!-- <h1 class="display-1 text-primary text-center">02</h1> -->
+            <h1 class="display-4 text-uppercase text-center">Our Services</h1>
+            <p class="text-center mb-5">- CRAFTSMANSHIP FOR EVERY ENVIRONMENT -</p>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                                <i class="fa fa-2x fa-solid fa-pen text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Rental</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">Design & concepts</h4>
+                        <p class="m-0">ASP Technical Services- Designing a distinctive exhibition stand that catches the eye and creates a strong impression is one of our valued qualities. We transform your vision into an impressive design.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                                <i class="fa fa-2x fa-solid fa-helmet-safety text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Financing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">Stand Construction</h4>
+                        <p class="m-0">All constructions happen in our warehouse; where it's equipped with experienced workers in all branches involved such as electricians, wood workers, painters and everyone needed for an outstanding outcome.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-2">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-car text-secondary"></i>
+                                <i class="fa fa-2x fa-solid fa-bars-progress text-secondary"></i>
                             </div>
                             <h1 class="display-2 text-white mt-n2 m-0">03</h1>
                         </div>
-                        <h4 class="text-uppercase mb-3">Car Inspection</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                        <h4 class="text-uppercase mb-3">Project Management</h4>
+                        <p class="m-0">With solid organization and communication skills, we manage the project, ensuring it's completed hassle-free, on schedule, and within budget. From the concept phase to the handover.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
+
+                <!-- <div class="col-lg-4 col-md-6 mb-2">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
@@ -314,7 +291,8 @@
                         <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
                         <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                     </div>
-                </div>
+                </div> -->
+                
             </div>
         </div>
     </div>
@@ -326,10 +304,10 @@
         <div class="container py-5">
             <div class="bg-banner py-5 px-4 text-center">
                 <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+                    <!-- <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1> -->
                     <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
-                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+                    <p class="mb-4"></p>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Contact Now</a>
                 </div>
             </div>
         </div>
@@ -339,144 +317,156 @@
 
     <!-- Rent A Car Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">03</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-1.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item active mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-2.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-3.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-4.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-5.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-6.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- <h1 class="display-1 text-primary text-center">03</h1> -->
+            <h1 class="display-4 text-uppercase text-center mb-2">FEATURED PROJECTS</h1>
+            <!-- projects  -->
+    <div class="wrapper project-scn">
+		<main class="page">
+			<section class="articles">
+
+				<div class="articles__container">
+
+					<div class="articles__filter filter-articles">
+						<button data-filter="*" type="button" class="filter-articles__item active">Show All</button>
+						<button data-filter="tech" type="button" class="filter-articles__item">category 1</button>
+						<button data-filter="culture" type="button" class="filter-articles__item">category 2</button>
+					</div>
+
+					<div class="articles__items">
+
+						<article data-filter="tech" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC07606.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="culture" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC07627.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="tech" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC07654.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="culture" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC07697.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="tech" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC07839.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="culture" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC08135.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="tech" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC08178.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+						<article data-filter="culture" class="articles__item article">
+							<a href="#" class="article__image">
+								<img src="img/projects/DSC08135.jpg" alt="Image">
+							</a>
+							<div class="article__body">
+								<div class="article__date">02.02.2023</div>
+								<h4 class="article__title">
+									<a href="" class="article__link-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+								</h4>
+								<div class="article__text">
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, sunt alias voluptatem sequi unde veniam.</p>
+								</div>
+							</div>
+						</article>
+
+					</div>
+				</div>
+
+			</section>
+		</main>
+	</div>
+    <!-- projects End -->
     </div>
     <!-- Rent A Car End -->
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
         <div class="container py-5">
             <h1 class="display-1 text-primary text-center">04</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
@@ -531,32 +521,46 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Banner Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 y-chos-us">
         <div class="container py-5">
             <div class="row mx-0">
+                <div class="col-lg-6 d-flex text-center px-0">
+                    <h1>why choose us</h1>
+                    <p>We pride ourselves on delivering projects of unparalleled quality, where every detail is meticulously crafted to ensure perfection.</p>
+                </div>
                 <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
-                        <div class="text-right">
-                            <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                    <div class="px-5 a d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">unparalleled quality</h3>
                             <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                            <!-- <a class="btn btn-primary py-2 px-4" href="">Start Now</a> -->
+                        </div>
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4 obj-r" src="img/y-chos-us/quality.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 b d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4 obj-l" src="img/y-chos-us/innovative.png" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">innovative design</h3>
+                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                            <!-- <a class="btn btn-primary py-2 px-4" href="">Start Now</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                    <div class="px-5 c d-flex align-items-center justify-content-between" style="height: 350px;">
                         <div class="text-left">
-                            <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                            <h3 class="text-uppercase text-light mb-3">100% on time delivery</h3>
                             <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                            <!-- <a class="btn btn-primary py-2 px-4" href="">Start Now</a> -->
                         </div>
-                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4 obj-r" src="img/y-chos-us/delivery.png" alt="">
                     </div>
                 </div>
             </div>
@@ -566,110 +570,133 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid testimonial-scn py-5">
         <div class="container py-5">
-            <h1 class="display-1 text-primary text-center">05</h1>
+            <!-- <h1 class="display-1 text-primary text-center">05</h1> -->
             <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
             <div class="owl-carousel testimonial-carousel">
+
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid" src="img/logo/client/dxb-live.png" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                    <h4 class="text-uppercase mb-2">DBX Live</h4>
+                    <p class="m-0">ASP designs interesting stand that not only attracted attention but also effectively conveyed our brand message.</p>
+                    <i class="mb-2">– Mr. Rashid al abbar</i>
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid" src="img/logo/client/smartdesign.png" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                    <h4 class="text-uppercase mb-2">Smart Design </h4>
+                    <p class="m-0">I’m very much impressed by their professionalism. From the initial stage to the event's execution, the team shows a strong commitment to quality and service.</p>
+                    <i class="mb-2">– Mr. Jamal</i>
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid" src="img/logo/client/arena.png" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                    <h4 class="text-uppercase mb-2">Arena</h4>
+                    <p class="m-0">ASP’s team was open to feedback and eager to discuss, resulting in a final product that exceeded our expectations.</p>
+                    <i class="mb-2">– Mr. Zerina </i>
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                        <img class="img-fluid" src="img/logo/client/electra.png" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                    <h4 class="text-uppercase mb-2">Electra </h4>
+                    <p class="m-0">I highly recommend ASP technical services for anyone looking for an event partner that values precision and excellence.</p>
+                    <i class="mb-2">– Mr.Anush 
+                    </i>
                 </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid" src="img/logo/client/op3.png" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">OP3 </h4>
+                    <p class="m-0">They even look for the smallest details, like the color scheme and table settings, were thoughtfully coordinated to create a unique look.
+                    </p>
+                    <i class="mb-2">– Mr. Charles Chang</i>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid" src="img/logo/client/highres.png" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Highres </h4>
+                    <p class="m-0">company handles events from design to setup smoothly, making sure schedules and costs are followed.</p>
+                    <i class="mb-2">– Mr. Adnan Najim</i>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid" src="img/logo/client/Projex.png" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Projex </h4>
+                    <p class="m-0">We trust ASP’s reliability, on-time servicing, making us the top choice for repeat projects.</p>
+                    <i class="mb-2">– Mr.Biju</i>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid" src="img/logo/client/jeem.png" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Jeem Exhibition </h4>
+                    <p class="m-0">We appreciate the professionalism of the staff, there friendly nature and commitment to making events successful.We appreciate the professionalism of the staff, there friendly nature and commitment to making events successful.</p>
+                    <i class="mb-2">– Mr. Humam Ismael</i>
+                </div>
+
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
 
 
+    
+
+
     <!-- Contact Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">06</h1>
+            <!-- <h1 class="display-1 text-primary text-center">06</h1> -->
             <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
             <div class="row">
                 <div class="col-lg-7 mb-2">
-                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
-                                </div>
-                                <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
+                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.2837082984092!2d55.0996523!3d24.990473899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1281604709d3%3A0x13701beea254add5!2sASP%20TECHNICAL%20SERVICES%20LLC!5e0!3m2!1sen!2sin!4v1730443833578!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5" style="height: 435px;">
                         <div class="d-flex mb-3">
                             <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
                             <div class="mt-n1">
                                 <h5 class="text-light">Head Office</h5>
-                                <p>123 Street, New York, USA</p>
+                                <p>Warehouse No-5, Jebel Ali, Industrial Area-1, Dubai, UAE</p>
                             </div>
                         </div>
-                        <div class="d-flex mb-3">
+                        <!-- <div class="d-flex mb-3">
                             <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
                             <div class="mt-n1">
                                 <h5 class="text-light">Branch Office</h5>
                                 <p>123 Street, New York, USA</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="d-flex mb-3">
                             <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
                             <div class="mt-n1">
                                 <h5 class="text-light">Customer Service</h5>
-                                <p>customer@example.com</p>
+                                <p>info@asptsllc.com</p>
                             </div>
                         </div>
                         <div class="d-flex">
                             <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
                             <div class="mt-n1">
-                                <h5 class="text-light">Return & Refund</h5>
-                                <p class="m-0">refund@example.com</p>
+                                <h5 class="text-light">Enquiry</h5>
+                                <p class="m-0">+91 1234 5678 90</p>
                             </div>
                         </div>
                     </div>
@@ -680,8 +707,8 @@
     <!-- Contact End -->
 
 
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
+    <!-- Vendor Start logo slider-->
+    <!-- <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="owl-carousel vendor-carousel">
                 <div class="bg-light p-4">
@@ -710,19 +737,36 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Vendor End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope text-white mr-3"></i>info@example.com</p>
-                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+    <div class="container-fluid footer  px-5" style="margin-top: 90px;">
+        <div class="footer-bnr">
+            <h4>are you ready to turn your vision into reality?</h4>
+            <button>Contact us</button>
+        </div>
+        <div class="d-grid pt-5">
+            <div class="div mb-5">
+                <h4 class="text-uppercase  mb-4">ASP</h4>
+                <p>
+                    Established in 2008 in the United Arab Emirates, ASP has swiftly risen to become a beacon of innovation and professionalism in the Events and Exhibitions industry.
+                </p>
+              
+            </div>
+            <div class="div mb-5">
+                <h4 class="text-uppercase  mb-4">Usefull Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right  mr-2"></i>Who We are</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right  mr-2"></i>What We do</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right  mr-2"></i>Our Portfolio</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right  mr-2"></i>Latest From ASP</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right  mr-2"></i>Contact</a>
+                </div>
+            </div>
+            <div class="div mb-5">
+                <h4 class="text-uppercase  mb-4">Follow Us</h4>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -730,64 +774,75 @@
                     <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
-                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
-                <div class="row mx-n1">
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
-                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <div class="w-100 mb-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <i>Lorem sit sed elitr sed kasd et</i>
-            </div>
+            
+           
         </div>
     </div>
-    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+    <!-- <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
         <p class="mb-2 text-center text-body">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
         <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-    </div>
+    </div> -->
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- for projects section -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        'use strict'
+
+function imagesInit() {
+	const images = document.querySelectorAll('.article__image');
+	if (images.length) {
+
+		images.forEach(image => {
+			const imageItem = image.querySelector('img');
+			const padding = imageItem.offsetHeight / imageItem.offsetWidth * 100;
+			image.style.paddingBottom = `${padding}%`;
+			imageItem.classList.add('init')
+		});
+
+	}
+};
+
+function gridInit() {
+	const items = document.querySelector('.articles__items');
+	const itemsGrid = new Isotope(items, {
+		itemsSelector: '.article',
+		masonry: {
+			fitWidth: true,
+			gutter: 20
+		}
+	});
+
+	document.addEventListener('click', documentActions);
+	function documentActions(e) {
+		const targetElement = e.target;
+		if (targetElement.closest('.filter-articles__item')) {
+			const filterItem = targetElement.closest('.filter-articles__item');
+			const filterValue = filterItem.dataset.filter;
+			const filterActiveItem = document.querySelector('.filter-articles__item.active');
+
+			filterValue === '*'
+				? itemsGrid.arrange({ filter: `` })
+				: itemsGrid.arrange({ filter: `[data-filter="${filterValue}"]` });
+
+			filterActiveItem.classList.remove('active');
+			filterItem.classList.add('active');
+
+			e.preventDefault();
+		}
+	};
+};
+
+window.addEventListener('load', windowLoad);
+function windowLoad() {
+	imagesInit();
+	gridInit();
+};
+    </script>
 
 
     <!-- JavaScript Libraries -->
